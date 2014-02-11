@@ -2,7 +2,9 @@ PHP-standalone-scripts
 ======================
 
 All PHP standalone scripts 
-    <br/><strong>Class</strong>
+
+
+    <strong>Class</strong>
     <ul>
       <li>API Class</li>
          Call REST Api using php cUrl Extension
