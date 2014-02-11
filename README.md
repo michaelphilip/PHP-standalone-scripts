@@ -1,12 +1,12 @@
 PHP-standalone-scripts
 ======================
 
-All PHP standalone scripts 
+All PHP standalone scripts
     <br/><br/>
     <strong>Class</strong>
     <ul>
       <li>API Class</li>
-         Call REST Api using php cUrl Extension
+         Call REST Api using php cURL Extension
     </ul>
     
 Test - Usage
