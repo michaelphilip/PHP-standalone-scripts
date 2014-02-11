@@ -7,9 +7,9 @@
 class Api
 {	
 	/**
-	 *	@params: $method = POST, PUT, GET etc... 
+	 * @params: $method = POST, PUT, GET etc... 
 	 *  	   : $data = array('param' => 'value') == api.php?param=value
-	 *  @return: depends on API FORMAT 
+	 * @return: depends on API FORMAT 
 	 */
 	public function call($method, $url, $data = false) 
 	{
