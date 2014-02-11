@@ -11,13 +11,11 @@ All PHP standalone scripts
 Test - Usage
 ======================
 API Class <br/>
-Im using info from http://www.binlist.net/ to check the bank identification number.
+Im using http://www.binlist.net/ web service (REST API) to check the bank identification number.
 
     $format = 'json'; //format can be (json, xml etc.) <br/>
     $bin    = 429503; //checking (Bank Identification Number)<br/>
-    $apiUrl = "http://www.binlist.net/{$format}/{$bin}"; <br/>
-
-
+    $apiUrl = "http://www.binlist.net/{$format}/{$bin}";<br/>
     $api = new Api(); //instantiate API Class<br/>
     $checkBin = $api->call('GET', $apiUrl); //call API call method<br/>
     var_dump($checkBin); //check output
