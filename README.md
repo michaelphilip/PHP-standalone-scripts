@@ -3,8 +3,12 @@ PHP-standalone-scripts
 
 All PHP standalone scripts without using 
 
-/* TEST - Usage*/
-/* We are calling fetching info from http://www.binlist.net/ API */
+
+Test - Usage
+======================
+
+API Class
+Im using info from http://www.binlist.net/ to check the bank identification number of credit card.
 
 $format = 'json'; //format can be (json, xml etc.)
 $bin    = 429503; //checking (Bank Identification Number)
