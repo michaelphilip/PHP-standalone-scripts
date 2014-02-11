@@ -1,12 +1,15 @@
 PHP-standalone-scripts
 ======================
 
-All PHP standalone scripts without using 
-
-
+All PHP standalone scripts 
+    <strong>Class</strong>
+    <ul>
+      <li>API Class</li>
+         Call REST Api using php cUrl Extension
+    </ul>
+    
 Test - Usage
 ======================
-
 API Class
 Im using info from http://www.binlist.net/ to check the bank identification number of credit card.
 
