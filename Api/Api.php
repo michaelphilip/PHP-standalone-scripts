@@ -32,7 +32,7 @@ class Api
 				}
 		}
 		
-		// Optional Authentication:
+		// Optional Authentication
 		curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 		curl_setopt($curl, CURLOPT_USERPWD, "username:password");
 	
