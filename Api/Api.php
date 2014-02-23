@@ -42,3 +42,5 @@ class Api
 		return curl_exec($curl);
 	}
 }
+
+?>
