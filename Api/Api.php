@@ -3,7 +3,6 @@
  * PHP
  * Call Rest API using cURL Extension
  */
-
 class Api
 {	
 	/**
@@ -42,5 +41,3 @@ class Api
 		return curl_exec($curl);
 	}
 }
-
-?>
