@@ -18,6 +18,7 @@ if (function_exists('openssl_encrypt')) {
     $encryptedMessage = base64_decode($encryptedMessage);
     $decryptedMessage = openssl_decrypt($encryptedMessage, $encryptionMethod, $secretKey, false, $iv);
     $decryptedMessage = substr($decryptedMessage, $omitLen, strlen($decryptedMessage) - (2 * $omitLen));
+    
     //Result
     echo "Encrypted: $encryptedMessage <br/><br/> Decrypted: $decryptedMessage";
 }
