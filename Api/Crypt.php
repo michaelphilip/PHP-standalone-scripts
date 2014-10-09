@@ -32,7 +32,9 @@ class Crypt
     public static function generateRandomNumber($length)
     {
         $num = null;
-        for ($i = 0; $i < $length; $i++) $num .= mt_rand(0, 9);
+        for ($i = 0; $i < $length; $i++) {
+            $num .= mt_rand(0, 9);
+        }
         return $num;
     }
 }
