@@ -1,7 +1,7 @@
 <?php
 /** 
  * PHP
- * Call Rest API using cURL Extension
+ * Call Rest API using cURL
  */
 class Api
 {	
