@@ -6,7 +6,7 @@
 class Api
 {	
 	/**
-	 * @params: $method = POST, PUT, GET etc... 
+	 * @params: $method = POST, PUT, GET
 	 *  	  : $data = array('param' => 'value') == api.php?param=value
 	 */
 	public function call($method, $url, $data = false) 
