@@ -9,7 +9,7 @@ All PHP standalone scripts
          Call REST Api using php cURL Extension
     </ul>
     
-Test - Usage
+Sample Usage
 ======================
 API Class
 --------
