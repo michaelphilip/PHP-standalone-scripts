@@ -11,7 +11,8 @@ All PHP standalone scripts
     
 Test - Usage
 ======================
-API Class <br/>
+API Class
+--------
 Im using http://www.binlist.net/ web service (REST API) to check the bank identification number.
 
     $format = 'json'; //format can be (json, xml etc.) <br />
@@ -22,28 +23,29 @@ Im using http://www.binlist.net/ web service (REST API) to check the bank identi
     var_dump($checkBin); //check output
 
 
-Cookie Class <br/>
+Cookie Class
+----------
 Here's the sample on how to use the CookieTraits in your controller. 
 
-/**
- * Class SampleController
- */
-class SampleController extends AbstractController
-{
-    use CookieTraits;
-
     /**
-     * Get the index page
-     *
-     * @param Request $request
+     * Class SampleController
      */
-    public function index(Request $request)
+    class SampleController extends AbstractController
     {
-        if (false === $this->isCookieEnabled()) {
-            // do necessary action if cookie is not enabled
+        use CookieTraits;
+    
+        /**
+         * Get the index page
+         *
+         * @param Request $request
+         */
+        public function index(Request $request)
+        {
+            if (false === $this->isCookieEnabled()) {
+                // do necessary action if cookie is not enabled
+            }
+            
+            // proceed to the next step
         }
         
-        // proceed to the next step
     }
-    
-}
