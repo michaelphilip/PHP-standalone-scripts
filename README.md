@@ -7,6 +7,8 @@ All PHP standalone scripts
     <ul>
       <li>API Class</li>
          Call REST Api using php cURL Extension
+       <li>CookieTrait </li>
+         Use to check whether browser cookie is enabled. You may use for storing, getting, destroying the cookies by name
     </ul>
     
 Sample Usage
