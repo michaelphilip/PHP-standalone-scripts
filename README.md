@@ -20,3 +20,30 @@ Im using http://www.binlist.net/ web service (REST API) to check the bank identi
     $api = new Api(); //instantiate API Class<br />
     $checkBin = $api->call('GET', $apiUrl); //call API call method<br />
     var_dump($checkBin); //check output
+
+
+Cookie Class <br/>
+Here's the sample on how to use the CookieTraits in your controller. 
+
+/**
+ * Class SampleController
+ */
+class SampleController extends AbstractController
+{
+    use CookieTraits;
+
+    /**
+     * Get the index page
+     *
+     * @param Request $request
+     */
+    public function index(Request $request)
+    {
+        if (false === $this->isCookieEnabled()) {
+            // do necessary action if cookie is not enabled
+        }
+        
+        // proceed to the next step
+    }
+    
+}
