@@ -1,0 +1,9 @@
+/vendor/
+/logs/*
+!/logs/README.md
+
+### PHPStore Related Ignores
+.idea/
+
+.php_cs.cache
+.phpunit.result.cache

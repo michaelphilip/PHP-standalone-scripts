@@ -1,40 +1,34 @@
 <?php
-/**
- * Class CookieTrait
- *
- * @author    Michael <resourcemode@yahoo.com>
- */
 
-namespace App\Traits;
+namespace Standalone\Traits;
 
 /**
- * Class CookieTraits
- *
+ * Trait CookieTraits.
  */
 trait CookieTraits
 {
-
     /**
-     * Cookie name default key
+     * Cookie name default key.
      *
      * @var string
      */
     protected $keyName = 'cookie_enable';
 
     /**
-     * Default time is in seconds
+     * Default time is in seconds.
      *
      * @var int
      */
     protected $defaultTime = 3600;
 
     /**
-     * Set the cookie expiration time
+     * Set the cookie expiration time.
      *
      * @param null $time
+     *
      * @return int
      */
-    protected function setDefaultTime($time = null)
+    protected function setDefaultTime($time = null): int
     {
         if (empty($time)) {
             return time() + $this->defaultTime;
@@ -44,13 +38,14 @@ trait CookieTraits
     }
 
     /**
-     * Create a cookie or cupcake
+     * Create a cookie or cupcake.
      *
      * @param $keyName
      * @param $value
-     * @return boolean
+     *
+     * @return bool
      */
-    public function createCookie($keyName = null, $value)
+    public function createCookie($keyName = null, $value): bool
     {
         if (null === $keyName) {
             $keyName = $this->keyName;
@@ -60,19 +55,21 @@ trait CookieTraits
     }
 
     /**
-     * Destroy the cookie by given name
+     * Destroy the cookie by given name.
      *
      * @param null $keyName
+     *
      * @return bool
      */
-    public function destroyCookieByName($keyName = null)
+    public function destroyCookieByName($keyName = null): bool
     {
         if (null === $keyName) {
             $keyName = $this->keyName;
         }
 
-        if(isset($_COOKIE[$keyName])) {
+        if (isset($_COOKIE[$keyName])) {
             unset($_COOKIE[$keyName]);
+
             return true;
         }
 
@@ -80,12 +77,11 @@ trait CookieTraits
     }
 
     /**
-     * Get cookie by name
-     *
      * @param $keyName
-     * @return bool|string|array|object
+     *
+     * @return mixed
      */
-    public function getCookieByName($keyName)
+    public function getCookieByName($keyName): ?string
     {
         if (isset($_COOKIE[$keyName])) {
             return $_COOKIE[$keyName];
@@ -95,11 +91,11 @@ trait CookieTraits
     }
 
     /**
-     * Check whether we are able to create a cookie
+     * Check whether we are able to create a cookie.
      *
      * @return bool
      */
-    public function isCookieEnabled()
+    public function isCookieEnabled(): bool
     {
         // create a cookie with a value of true
         $this->createCookie(null, true);

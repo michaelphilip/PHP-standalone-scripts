@@ -1,0 +1,22 @@
+{
+    "name": "Standalone PHP scripts",
+    "description": "Standalone PHP scripts",
+    "authors": [
+        {
+            "name": "Michael Favila",
+            "email": "resourcemode@yahoo.com",
+            "homepage": "https://github.com/resourcemode"
+        }
+    ],
+    "require": {
+        "php": "~7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Standalone\\": "src/"
+        }
+    }
+}
