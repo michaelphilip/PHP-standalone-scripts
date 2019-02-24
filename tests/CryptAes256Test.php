@@ -22,13 +22,13 @@ class CryptAes256Test extends TestCase
         $this->cryptAes256 = new CryptAes256($this->secretKey, $this->ivKey);
     }
 
-    public function testEncrypt()
+    public function testEncrypt(): void
     {
         $message = $this->cryptAes256->encryptMessage('Test Message');
         $this->assertIsString($message);
     }
 
-    public function testDecrypt()
+    public function testDecrypt(): void
     {
         $message = $this->cryptAes256->encryptMessage('Test Message');
         $decrypt = $this->cryptAes256->decryptMessage($message);
