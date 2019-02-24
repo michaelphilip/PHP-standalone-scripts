@@ -1,6 +1,6 @@
 PHP-standalone-scripts
 ======================
-[![Build Status](https://travis-ci.org/resourcemode/PHP-standalone-scripts.svg?branch=master)](https://travis-ci.org/resourcemode/PHP-standalone-scripts)
+
 
 All PHP standalone scripts
     <br/><br/>
