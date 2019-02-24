@@ -16,7 +16,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Standalone\\": "src/"
+            "Standalone\\": "src/",
+            "Standalone\\Tests\\": "tests/"
         }
     }
 }

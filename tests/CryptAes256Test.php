@@ -1,6 +1,6 @@
 <?php
 
-namespace Standalone\Test;
+namespace Standalone\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Standalone\Security\CryptAes256;

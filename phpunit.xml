@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/7.3/phpunit.xsd"
-         bootstrap="tests/"
-         forceCoversAnnotation="true"
-         beStrictAboutCoversAnnotation="true"
-         beStrictAboutOutputDuringTests="true"
-         beStrictAboutTodoAnnotatedTests="true"
-         verbose="true">
+<phpunit bootstrap="tests/bootstrap.php" colors="true">
     <testsuites>
-        <testsuite name="default">
-            <directory suffix="Test.php">tests/</directory>
+        <testsuite name="Test Suite">
+            <directory>./tests/</directory>
         </testsuite>
     </testsuites>
 
     <filter>
-        <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">src</directory>
+        <whitelist>
+            <directory>./src</directory>
+            <exclude>
+                <directory>./src</directory>
+            </exclude>
         </whitelist>
     </filter>
+
+    <logging>
+        <log type="coverage-text" target="php://stdout"/>
+    </logging>
 </phpunit>
+
+<!--<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+         <!--xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/7.3/phpunit.xsd"-->
+         <!--bootstrap="tests/"-->
+         <!--forceCoversAnnotation="true"-->
+         <!--beStrictAboutCoversAnnotation="true"-->
+         <!--beStrictAboutOutputDuringTests="true"-->
+         <!--beStrictAboutTodoAnnotatedTests="true"-->
+         <!--verbose="true">-->
+    <!--<testsuites>-->
+        <!--<testsuite name="default">-->
+            <!--<directory suffix="Test.php">tests/</directory>-->
+        <!--</testsuite>-->
+    <!--</testsuites>-->
+
+    <!--<filter>-->
+        <!--<whitelist processUncoveredFilesFromWhitelist="true">-->
+            <!--<directory suffix=".php">src</directory>-->
+        <!--</whitelist>-->
+    <!--</filter>-->
+<!--</phpunit>-->
